@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+* {
+  font-family: "Bebas Neue" !important;
+}
+
+@layer utilities {
+  @keyframes aurora {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .aurora-reduce { animation: none !important; }
+  }
+}
+
+@layer base {
+  html, body, #root { height: 100%; }
+  body { margin: 0; background:#000; overflow-x:hidden; }
+}
+@layer utilities {
+  .fit-vh {
+    --lines: 5;          /* number of headings */
+    --lh: 0.85;          /* line-height you use */
+    --gap: 0;            /* vertical gap in px between lines */
+    --gapTotal: calc((var(--lines) - 1) * var(--gap));
+    font-size: calc((100svh - 4rem - var(--gapTotal)) / (var(--lines) * var(--lh)));
+    line-height: var(--lh);
+  }
+}
+
+@keyframes v-marquee {
+  from { transform: translateY(0); }
+  to   { transform: translateY(calc(-1 * var(--list-h, 0px))); }
+}
+
+/* optional a11y */
+@media (prefers-reduced-motion: reduce) {
+  .reduce-motion\:no-anim { animation: none !important; }
+}
+
+@keyframes gradient-shift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
