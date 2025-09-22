@@ -9,6 +9,7 @@ const sections: Section[] = [
   { label: "Home", path: "/" },
   { label: "About", path: "/about" },
   { label: "Services", path: "/services" },
+  { label: "Templates", path: "/templates" },
   { label: "Pricing", path: "/pricing" },
   { label: "Contact", path: "/contact" },
 ];

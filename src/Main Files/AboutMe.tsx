@@ -5,19 +5,15 @@ export default function About() {
     <PageWrapper>
       <section className="bg-black text-white min-h-[calc(100svh-4rem)] overflow-y-auto">
         <div className="max-w-screen-xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-12 items-start">
-          {/* LEFT: Photo / portrait */}
           <div className="flex md:block justify-center">
             <div className="aspect-[4/5] w-64 md:w-[22rem] rounded-2xl overflow-hidden bg-gray-800 shadow-2xl ring-1 ring-white/10">
-              {/* Replace with your <img src="/me.jpg" alt="Luis Saravia" /> */}
               <div className="h-full w-full flex items-center justify-center text-gray-400">
-                <img src="/public/Portrait.jpg" alt="" />
+                <img src="/Images/Portrait.jpg" alt="" />
               </div>
             </div>
           </div>
 
-          {/* RIGHT: About + Tech Stack */}
           <div className="space-y-10">
-            {/* About */}
             <header className="space-y-4">
               <h1
                 className="
@@ -34,7 +30,7 @@ export default function About() {
               <p className="text-lg leading-relaxed text-gray-300">
                 I’m <span className="font-semibold text-white">Luis Saravia</span>, a{" "}
                 <span className="text-blue-400 font-medium">
-                  Software Engineering Student at Miami Dade College
+                  Website Developer based out of Miami
                 </span>{" "}
                 who loves building practical, user-focused applications. I enjoy turning ideas
                 into efficient, maintainable, and visually engaging products.

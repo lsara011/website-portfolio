@@ -1,8 +1,7 @@
 @import "tailwindcss";
 
-* {
-  font-family: "Bebas Neue" !important;
-}
+
+
 
 @layer utilities {
   @keyframes aurora {
@@ -14,11 +13,13 @@
   @media (prefers-reduced-motion: reduce) {
     .aurora-reduce { animation: none !important; }
   }
+  
 }
 
 @layer base {
   html, body, #root { height: 100%; }
-  body { margin: 0; background:#000; overflow-x:hidden; }
+  body { margin: 0; background:#000; overflow-x:hidden; font-family: "Bebas Neue";}
+  
 }
 @layer utilities {
   .fit-vh {

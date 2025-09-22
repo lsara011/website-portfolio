@@ -1,5 +1,3 @@
-
-
 export default {
   content: [
     "./index.html",
@@ -22,6 +20,12 @@ export default {
       },
       textAlign: {
         'center': 'center',
+      },
+      fontFamily: {
+        bebas: ["Bebas Neue", "sans-serif"], // 👈 ADD THIS
+        poppins: ["Poppins", "sans-serif"],
+        merriweather: ["Merriweather", "serif"],
+        pacifico: ["Pacifico", "cursive"],
       },
     },
   },

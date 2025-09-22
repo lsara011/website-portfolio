@@ -7,6 +7,7 @@ import Services from "./Main Files/Services";
 import Contact from "./Main Files/Contact";
 import Pricing from "./Main Files/Pricing";
 import { AnimatePresence } from "framer-motion";
+import WebTemplates from "./Main Files/Templates";
 
 function NotFound() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path="/" element={<MainSection />} />
           <Route path="/about" element={<AboutMe />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/templates" element={<WebTemplates />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
