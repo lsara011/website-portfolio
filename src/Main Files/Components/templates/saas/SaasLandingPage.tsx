@@ -349,14 +349,6 @@ const SaaSTestimonials = () => (
 
 // ---------- FAQ ----------
 const SaaSFAQ = () => {
-  const faqs = [
-    { q: "Is there a free trial?", a: "Yes! Our Starter plan is completely free for up to 3 users." },
-    { q: "Can I upgrade later?", a: "Absolutely. You can switch plans anytime from your dashboard." },
-    { q: "Do you offer annual billing?", a: "Yes, annual plans come with a 15% discount." },
-    { q: "Is my data secure?", a: "We use enterprise-grade encryption and are fully SOC 2 compliant." },
-  ];
-  const [open, setOpen] = useState<number | null>(null);
-
   return (
     <section id="faq" className="py-28 bg-gray-50">
       <div className="max-w-3xl mx-auto px-6">
