@@ -52,7 +52,7 @@ export default function About() {
 
               <div className="flex flex-wrap gap-3 pt-2">
                 <a
-                  href="/public/Luis_Saravia_Tech_Resume2025.pdf" target="_blank"
+                  href="/Luis_Saravia_Tech_Resume2025.pdf" target="_blank"
                   className="px-6 py-3 rounded-lg bg-white text-black font-semibold hover:bg-gray-200 transition"
                 >
                   Check My Resume
