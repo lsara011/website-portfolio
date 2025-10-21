@@ -58,7 +58,7 @@ export default function About() {
                   Check My Resume
                 </a>
                 <a
-                  href="mailto:saravia2019@hotmail.com?subject=Project%20inquiry"
+                  href="mailto:luissaraviawd@gmail.com?subject=Project%20inquiry"
                   className="px-6 py-3 rounded-lg border border-white/20 hover:bg-white/10 transition"
                 >
                   Email Me
