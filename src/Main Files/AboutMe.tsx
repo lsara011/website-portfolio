@@ -66,7 +66,6 @@ export default function About() {
               </div>
             </header>
 
-            {/* Tech Stack */}
             <section aria-labelledby="stack" className="space-y-6">
               <h2 id="stack" className="text-2xl font-semibold">Technology Stack</h2>
 
@@ -117,8 +116,6 @@ export default function About() {
             </section>
           </div>
         </div>
-
-        {/* PERSONAL GRID (4 photos) */}
         <div className="max-w-screen-xl mx-auto px-6 pb-6 pt-10">
           <div className="border-t border-white/10 pt-10">
             <h2 className="text-2xl font-semibold">Life Outside of Code</h2>
@@ -139,7 +136,6 @@ export default function About() {
   );
 }
 
-/* ——— Small UI helpers ——— */
 function StackGroup({ title, items }: { title: string; items: string[] }) {
   return (
     <div>
@@ -172,4 +168,3 @@ function PhotoCard({ src, label }: { src: string; label: string }) {
     </figure>
   );
 }
-

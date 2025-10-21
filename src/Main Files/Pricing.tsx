@@ -7,7 +7,6 @@ export default function Pricing() {
   return (
     <PageWrapper>
       <section className="bg-black text-white min-h-[calc(100svh-4rem)]">
-        {/* Hero */}
         <div className="max-w-screen-xl mx-auto px-6 pt-14 pb-10 text-center">
           <h1
             className="
@@ -18,93 +17,57 @@ export default function Pricing() {
               [animation:gradient-shift_8s_linear_infinite]
             "
           >
-            Pricing
+            Website Development Plans
           </h1>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-300 leading-relaxed">
-            Clear, upfront pricing designed for realistic timelines and growing businesses.
+            Straightforward, transparent pricing — designed for small businesses and startups.
           </p>
         </div>
 
-        {/* Pricing Grid */}
-        <div className="max-w-6xl mx-auto px-6 grid gap-8 sm:grid-cols-2 lg:grid-cols-4 justify-items-center items-stretch">
-          <div className="max-w-md w-full">
-            <PricingCard
-              className="h-full"
-              title="Template Website"
-              price="$500"
-              period="includes up to 3 pages"
-              description="A clean, professional site using a template—perfect for small businesses."
-              features={[
-                "Up to 3 pages (Home, About, Contact)",
-                "Customized branding, colors & content",
-                "Delivered & launched within 1 week",
-                "Basic SEO setup included",
-              ]}
-              selected={selected === "template"}
-              onSelect={() => setSelected("template")}
-            />
-          </div>
+        <div className="max-w-5xl mx-auto px-6 grid gap-8 sm:grid-cols-2 justify-items-center items-stretch">
+          {/* Starter Plan */}
+          <PricingCard
+            className="h-full"
+            title="Starter Plan"
+            price="$0 Down"
+            period="$150/month · 12-month commitment"
+            description="Best for new businesses or first-time website owners who want a professional site without large upfront costs."
+            features={[
+              "Up to 3 pages (Home, About, Contact)",
+              "Hosting, maintenance, and SSL included",
+              "Ongoing updates & support",
+              "$25 per extra page",
+            ]}
+            selected={selected === "starter"}
+            onSelect={() => setSelected("starter")}
+          />
 
-          <div className="max-w-md w-full">
-            <PricingCard
-              className="h-full"
-              title="Extra Pages"
-              price="$100"
-              period="per additional page"
-              description="Ideal for menus, services, or portfolios."
-              features={[
-                "Flexible page add-ons",
-                "Fully matched to your site style",
-                "Keeps your site scalable",
-              ]}
-              selected={selected === "extra"}
-              onSelect={() => setSelected("extra")}
-            />
-          </div>
-
-          <div className="max-w-md w-full">
-            <PricingCard
-              className="h-full"
-              title="Hosting & Care Plan"
-              price="$150"
-              period="per month"
-              description="Optional add-on: hosting, backups, and monthly support."
-              features={[
-                "Fast, secure hosting + SSL",
-                "Monthly backups & uptime monitoring",
-                "Small monthly edits included",
-              ]}
-              selected={selected === "care"}
-              onSelect={() => setSelected("care")}
-            />
-          </div>
-
-          <div className="max-w-md w-full">
-            <PricingCard
-              className="h-full"
-              title="Custom Website"
-              price="Starts at $2,000"
-              period="per project"
-              description="For advanced features, unique designs, and full customization."
-              features={[
-                "Unlimited pages & custom layouts",
-                "E-commerce, bookings, or dashboards",
-                "Third-party integrations",
-              ]}
-              selected={selected === "custom"}
-              onSelect={() => setSelected("custom")}
-            />
-          </div>
+          {/* Business Plan */}
+          <PricingCard
+            className="h-full"
+            title="Business Plan"
+            price="$2,500"
+            period="one-time project"
+            description="Perfect for established businesses ready for a complete, customized website experience."
+            features={[
+              "5-page minimum custom design",
+              "$100 per extra page",
+              "Hosting & maintenance: $30/month",
+              "Full ownership of all files and code",
+            ]}
+            selected={selected === "business"}
+            onSelect={() => setSelected("business")}
+          />
         </div>
 
-        {/* Single Call-to-Action Section */}
+        {/* CTA */}
         <div className="text-center mt-12 space-y-4">
           <p className="text-lg text-gray-300">
-            Interested in working together? Check out our{" "}
+            Ready to get started? Check out our{" "}
             <a href="/templates" className="underline hover:text-white">
               templates
             </a>{" "}
-            or get in touch to discuss your project.
+            or reach out to discuss your project.
           </p>
           <a
             href="/contact"
@@ -118,6 +81,7 @@ export default function Pricing() {
   );
 }
 
+// --- Pricing Card Component ---
 type PricingProps = {
   title: string;
   price: string;
@@ -174,7 +138,6 @@ function PricingCard({
           ))}
         </ul>
       </div>
-      {/* Removed individual buttons */}
     </div>
   );
 }
