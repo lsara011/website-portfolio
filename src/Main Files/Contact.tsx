@@ -27,7 +27,6 @@ export default function Contact() {
     message: "",
   });
 
-  // 👇 Use your real Formspree form ID
   const [state, handleSubmit] = useForm("meolvbdy");
 
   const onChange =
@@ -60,7 +59,7 @@ export default function Contact() {
               Get in touch
             </h1>
             <p className="mt-3 text-gray-300">
-              Have a project in mind? Tell me a bit about it and I’ll get back to you.
+              From a project idea or to reach out to me, please feel free to fill out this form! I will get back to you as soon as possible.
             </p>
           </div>
 
@@ -141,7 +140,7 @@ export default function Contact() {
                 value={data.subject}
                 onChange={onChange("subject")}
                 className="w-full rounded-lg bg-black/40 border border-white/10 px-4 py-3 outline-none focus:border-white/30"
-                placeholder="Website for my business"
+                placeholder="Subject Title"
                 required
               />
             </Field>
@@ -153,7 +152,7 @@ export default function Contact() {
                 value={data.message}
                 onChange={onChange("message")}
                 className="w-full min-h-40 rounded-lg bg-black/40 border border-white/10 px-4 py-3 outline-none focus:border-white/30"
-                placeholder="Tell me a bit about your business, goals, and timeline…"
+                placeholder="Hello! I would like to learn more about..."
                 required
               />
               <ValidationError prefix="Message" field="message" errors={state.errors} />

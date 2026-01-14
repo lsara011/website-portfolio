@@ -24,20 +24,33 @@ export default function About() {
                   [animation:gradient-shift_8s_linear_infinite]
                 "
               >
-                About Me
+                Hi Everyone,
               </h1>
 
               <p className="text-lg leading-relaxed text-gray-300">
                 I’m <span className="font-semibold text-white">Luis Saravia</span>, a{" "}
                 <span className="text-blue-400 font-medium">
-                  Website Developer based out of Miami
+                  Software Engineering Gradute from Miami Dade College
                 </span>{" "}
-                who loves building practical, user-focused applications. I enjoy turning ideas
-                into efficient, maintainable, and visually engaging products.
+                who loves building practical, user-focused applications. I started my technical 
+                journey in 2023, when i first touched my line of code in CodeCademy. I enrolled
+                in Miami Dade College in January 2024 and finished my Bachelor's Degree in Information 
+                Systems Technology with a Software Engineering Focus.
+                <br />
+                Some of the courses that i have taken during my time in college included:
               </p>
+              <ul className="text-blue-400 font-medium pl-4 list-disc list-inside">
+                <li>Software Engineering I & II</li>
+                <li>iPhone Development I & II</li>
+                <li>C++, Python, Java, and SQL Courses</li>
+                <li>System Analysis and Design</li>
+                <li>Discrete Structures, Data Structures, and Design and Analysis of Algorithms</li>
+                <li>Natural Language Processing</li>
+                <li>Introduction to Artificial Intelligence</li>
+              </ul>
 
               <p className="text-lg leading-relaxed text-gray-300">
-                Outside of code, I’m a competitive <strong>pool player 🎱</strong>, a{" "}
+                Outside of code, I’m a competitive <strong>pool player 🎱</strong> overseeing my 8-ball team as captain, a{" "}
                 <strong>musician 🎶</strong>, and a <strong>chef 👨‍🍳</strong>. Those
                 hobbies sharpen creativity, discipline, and attention to detail—qualities I bring
                 to every project.
@@ -48,6 +61,10 @@ export default function About() {
                 a <span className="font-medium text-white">team-first mindset</span>, and a drive to{" "}
                 <span className="font-medium text-white">solve real problems</span> with clean,
                 thoughtful solutions.
+              </p>
+
+              <p className="text-2xl">
+                Yours Truly, Luis Saravia 
               </p>
 
               <div className="flex flex-wrap gap-3 pt-2">
