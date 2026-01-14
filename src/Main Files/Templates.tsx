@@ -33,7 +33,7 @@ export default function WebTemplates() {
       <div className="sticky top-16 z-40 border-b bg-white/80 backdrop-blur">
         <Container>
           <div className="flex items-center justify-between py-3">
-            <h1 className="text-lg font-semibold">Web Templates — Preview</h1>
+            <h1 className="text-lg font-semibold">Web Previews</h1>
             <div className="flex flex-wrap gap-2">
               {tabs.map((t) => (
                 <button

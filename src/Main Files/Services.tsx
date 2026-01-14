@@ -23,7 +23,7 @@ export default function Services() {
       </div>
 
       {/* Services overview */}
-      <div className="max-w-screen-xl mx-auto px-6 pb-16 grid gap-8 md:grid-cols-3">
+      <div className="max-w-screen-xl mx-auto px-6 pb-16 grid gap-8 md:grid-cols-2">
         <ServiceCard
           title="Website Templates"
           description="Affordable starter sites for small businesses."
@@ -49,6 +49,15 @@ export default function Services() {
             "Tailored design & branding",
             "E-commerce, booking, APIs",
             "Built to scale",
+          ]}
+        />
+        <ServiceCard
+          title="Landing Page"
+          description="A focused page built to drive one specific action."
+          points={[
+            "Focused on a singe goal",
+            "Higher conversion rates",
+            "Clear, distraction-free messaging",
           ]}
         />
       </div>
